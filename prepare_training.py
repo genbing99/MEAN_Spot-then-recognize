@@ -37,10 +37,7 @@ def recognition_label(dataset_name, emotion_class, final_samples, final_emotions
         
     # Determine the emotions used for evaluation
     if (dataset_name == 'CASME_sq' or dataset_name == 'SAMMLV'):
-        if(emotion_class == 4):
-            emotion_list = ['negative', 'positive', 'surprise', 'others']
-        elif(emotion_class == 3):
-            emotion_list = ['negative', 'positive', 'surprise']
+        emotion_list = ['negative', 'positive', 'surprise']
     else:
         emotion_list = ['repression', 'anger', 'contempt', 'disgust', 'fear', 'sadness', 'negative', 'happiness', 'positive', 'surprise', 'others', 'other']
 

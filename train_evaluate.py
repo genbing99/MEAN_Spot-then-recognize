@@ -51,7 +51,7 @@ def train_test(X, y, X1, y1, X2, y2, dataset_name, emotion_class, groupsLabel, g
         spot_train_index.append(train_index)
         spot_test_index.append(test_index)
     for subject_index, (train_index, test_index) in enumerate(loso.split(X1, y1, groupsLabel1)): # Recognition Leave One Subject Out
-        if (subject_index not in recog_subject_uni): # To remove subject 025 in SAMMLV 3 emotion class 
+        if (subject_index not in recog_subject_uni): # To remove subject that don't have chosen emotions for evalaution 
             recog_train_index.append(np.array([]))
             recog_test_index.append(np.array([]))
         recog_train_index.append(train_index)

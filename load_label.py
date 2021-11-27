@@ -1,10 +1,6 @@
 def load_label(dataset_name, images, subjects, subjectsVideos, codeFinal):
     # Filter the emotion to be evaluated
-    # CASME2 evaluation has class 'others'
-    if(dataset_name == 'CASME2'):
-        emotion_list = ['repression', 'anger', 'contempt', 'disgust', 'fear', 'sadness', 'negative', 'happiness', 'positive', 'surprise', 'others', 'other']
-    else:
-        emotion_list = ['repression', 'anger', 'contempt', 'disgust', 'fear', 'sadness', 'negative', 'happiness', 'positive', 'surprise']    
+    emotion_list = ['repression', 'anger', 'contempt', 'disgust', 'fear', 'sadness', 'negative', 'happiness', 'positive', 'surprise', 'others', 'other']
     emotion_negative = ['negative']
     emotion_positive = ['happiness']
     emotion_surprise = ['surprise']
