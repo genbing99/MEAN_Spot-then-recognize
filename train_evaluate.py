@@ -178,7 +178,8 @@ def train_test(X, y, X1, y1, X2, y2, dataset_name, emotion_class, groupsLabel, g
             gt_list.extend(list(argmax(y2_test, -1)))
             pred_ori_list.extend(list(argmax(result_recog_ori, -1)))
             pred_list, gt_tp_list, pred_window_list, pred_single_list = recognition(dataset_name, emotion_class, results[1], preds, metric_video, final_emotions, subject_count, pred_list, gt_tp_list, y_test, final_samples, pred_window_list, pred_single_list, spot_multiple, k, k_p, final_dataset_spotting)
-
+            print('Ground Truth           :', list(argmax(y2_test, -1)))
+            
     print('Done Index: ' + str(subject_count-1) + ' | Subject : ' + str(final_subjects[subject_count-1]))
 
     end = time.time()
