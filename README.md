@@ -1,4 +1,4 @@
-<!-- # Micro-Expression Analysis Network to spot-then-recognize micro-expressions
+# Micro-Expression Analysis Network to spot-then-recognize micro-expressions
 
 This is the extended work of <a href="https://arxiv.org/pdf/2106.06489.pdf">Paper</a> and <a href="https://github.com/genbing99/SoftNet-SpotME">Project</a>. 
 
@@ -94,4 +94,3 @@ Open main.py, change the dataset name and expression type for evaluation.
 ## Additional Notes
 
 ##### Please email me at genbing67@gmail.com if you have any inquiries or issues.
- -->
