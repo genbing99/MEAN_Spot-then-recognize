@@ -87,8 +87,10 @@ Open main.py, change the dataset name and expression type for evaluation.
 
 ``` python main.py ```
 
-#### Note for parameter settings <br>
-&nbsp; --dataset_name (CASME_sq/SAMMLV/CASME2/SMIC_HS/SMIC_VIS/SMIC_NIR) <br>
-&nbsp; --train (True/False) *False using pretrained weights <br>
+#### &nbsp; Note for parameter settings <br>
+&nbsp;&nbsp; --dataset_name (CASME_sq/SAMMLV/CASME2/SMIC_HS/SMIC_VIS/SMIC_NIR) <br>
+&nbsp;&nbsp; --train (True/False) *False using pretrained weights <br>
+
+## Additional Notes
 
 ##### Please email me at genbing67@gmail.com if you have any inquiries or issues.
