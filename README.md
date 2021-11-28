@@ -2,15 +2,15 @@
 
 This is the extended work of <a href="https://arxiv.org/pdf/2106.06489.pdf">Paper</a> and <a href="https://github.com/genbing99/SoftNet-SpotME">Project</a>. 
 
-Notably, this is the first known work that address micro-expression analysis (spot-then-recognize) on long videos, particularly with deep-learning approach.
+Notably, this is the first known work that addresses micro-expression analysis (spot-then-recognize) on long videos, particularly with the deep-learning approach.
 
 ## Framework of Proposed MEAN Architecture
 Overview of the end-to-end MEAN architecture with two-step learning paradigm: </br></br>
 <img src='images/mean_architecture.jpg' width=900 height=400>
 
-A two-step learning procedure using inductive transfer learning is proposed to first spot the micro-expression interval then classifying the emotion class:
+A two-step learning procedure using inductive transfer learning is proposed to first spot the micro-expression interval then classify the emotion class:
 <ul>
- <li> Micro-expression Spotting - First trained with linear output at the end of network to assign a spotting confidence score to each frame. </li>
+ <li> Micro-expression Spotting - First trained with linear output at the end of the network to assign a spotting confidence score to each frame. </li>
  <li> Micro-expression Recognition - The knowledge learned from spotting is transferred in the shared layers, replaced the output with a softmax layer to classify the emotion. </li>
 </ul>
 
