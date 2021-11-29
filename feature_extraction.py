@@ -74,7 +74,6 @@ def feature_extraction_recognition(dataset_name, final_images, final_samples):
 
     rect = dlib.rectangle(0,0,128,128) # For dlib landmark detection
     if dataset_name == 'CASME_sq' or dataset_name == 'SAMMLV':
-        sample_count = 0
         for video in range(len(final_images)):
             ref_img = final_images[video][0]
             shape = face_pose_predictor(ref_img,rect)
@@ -86,8 +85,7 @@ def feature_extraction_recognition(dataset_name, final_images, final_samples):
                 img2 = final_images[video][apex]
                 final_image = preProcess(img1, img2, shape)
                 dataset.append(final_image)
-                print('Video:', video, 'Done')
-                sample_count+=1
+            print('Video:', video, 'Done')
 
     elif dataset_name == 'CASME2':
         # Only onset and apex

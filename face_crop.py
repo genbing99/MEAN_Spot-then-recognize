@@ -86,18 +86,18 @@ def face_crop(dataset_name):
             print('Video', vid.split('\\')[-1])
 
             # Read videos from 'SAMM_longvideos'
-            for dir_crop_img in natsort.natsorted(glob.glob(vid+'\\*.jpg')):
+            for img_count, dir_crop_img in enumerate(natsort.natsorted(glob.glob(vid+'\\*.jpg'))):
                 img = dir_crop_img.split('\\')[-1].split('.')[0]
 
                 # Get img num Ex 0001,0002,...,2021
-                count = img[-4:]
+                count = img.split('_')[-1]
                 # Load the image
                 image = cv2.imread(dir_crop_img)
                 # Dlib face detection
                 detected_faces = face_detector(image, 1)
 
                 # Use first frame as reference frame for face cropping
-                if (count == '0001'):
+                if (img_count == 0):
                     for i, face_rect in enumerate(detected_faces):
                         face_top = face_rect.top()
                         face_bottom = face_rect.bottom()
