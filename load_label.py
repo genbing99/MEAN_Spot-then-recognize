@@ -96,19 +96,19 @@ def load_label(dataset_name, images, subjects, subjectsVideos, codeFinal):
 
     return final_images, final_subjects, final_videos, final_samples, final_emotions
 
-# Preset k using fps*0.2s
+# Preset k using fps*0.1s
 def set_k(dataset_name):
-    if(dataset_name == 'CASME2'): # 5 class, Calculated using fps*0.2s
+    if(dataset_name == 'CASME2'): # 5 class, Calculated using fps*0.1s
         k = 20
-    elif(dataset_name == 'SMIC_VIS'): # 3 class, Calculated using fps*0.2s
+    elif(dataset_name == 'SMIC_VIS'): # 3 class, Calculated using fps*0.1s
         k = 3
-    elif(dataset_name == 'SMIC_HS'): # 3 class, Calculated using fps*0.2s
+    elif(dataset_name == 'SMIC_HS'): # 3 class, Calculated using fps*0.1s
         k = 10
-    elif(dataset_name == 'SMIC_NIR'): # 3 class, Calculated using fps*0.2s
+    elif(dataset_name == 'SMIC_NIR'): # 3 class, Calculated using fps*0.1s
         k = 3
-    elif(dataset_name == 'CASME_sq'): # 3 class, Calculated using fps*0.2s
+    elif(dataset_name == 'CASME_sq'): # 3 class, Calculated using fps*0.1s
         k = 3
-    elif(dataset_name == 'SAMMLV'): # 3 class, Calculated using fps*0.2s
+    elif(dataset_name == 'SAMMLV'): # 3 class, Calculated using fps*0.1s
         k = 20
     print(dataset_name, 'k =', k)
     return k
