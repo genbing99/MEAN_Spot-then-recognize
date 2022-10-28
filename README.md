@@ -1,3 +1,18 @@
+## MEAN architecture
+<img src='images/mean_architecture.jpg' width=900 height=400>
+Characteristics: </br>
+<ul>
+<li> Shallow network </li> 
+<li> Multi-stream </li>
+<li> Multi-output with two task-specific networks </li>
+<li> Capable of both micro-expression spotting and recognition </li>
+</ul>
+
+## Results
+The detailed result for micro-expression spotting (S) and analysis (A). </br>
+Take note that analysis is equivalent to spot-then-recognize and STRS is our proposed evaluation metric.
+<img src='images/detail_result.png' width=900 height=350> 
+
 ## How to run the code
 
 <b>Step 1)</b> Download the micro-expression datasets for experiment, we suggest the files to be structured as follows:
