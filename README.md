@@ -9,8 +9,9 @@ Characteristics: </br>
 </ul>
 
 ## Results
-The detailed result for micro-expression spotting (S) and analysis (A). </br>
-Take note that analysis is equivalent to spot-then-recognize and STRS is our proposed evaluation metric.
+Take note that analysis is equivalent to spot-then-recognize and STRS is our proposed evaluation metric. </br>
+Please refer to the paper for more experiment results. </br>
+Here is the detailed result for micro-expression spotting (S) and analysis (A): </br>
 <img src='images/detail_result.png' width=900 height=350> 
 
 ## How to run the code
