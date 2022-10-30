@@ -81,7 +81,14 @@ Open main.py, change the dataset name and expression type for evaluation.
 &nbsp;&nbsp; --train (True/False)
 
 ## Additional Notes
-
-The work is currently under review.
+If you find this work useful, please cite the paper: <br> <br>
+@article{liong2022spot, <br>
+  title={Spot-then-recognize: A Micro-Expression Analysis Network for seamless evaluation of long videos}, <br>
+  author={Liong, Gen-Bing and See, John and Chan, Chee-Seng}, <br>
+  journal={Signal Processing: Image Communication}, <br>
+  pages={116875}, <br>
+  year={2022}, <br>
+  publisher={Elsevier} <br>
+} <br>
 
 ##### Please email me at genbing67@gmail.com if you have any inquiries or issues.
