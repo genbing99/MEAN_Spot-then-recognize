@@ -82,12 +82,13 @@ Open main.py, change the dataset name and expression type for evaluation.
 
 ## Additional Notes
 If you find this work useful, please cite the paper: <br> <br>
-@article{liong2022spot, <br>
-  title={Spot-then-recognize: A Micro-Expression Analysis Network for seamless evaluation of long videos}, <br>
+@article{liong2023spot, <br>
+  title={Spot-then-Recognize: A Micro-Expression Analysis Network for Seamless Evaluation of Long Videos}, <br>
   author={Liong, Gen-Bing and See, John and Chan, Chee-Seng}, <br>
   journal={Signal Processing: Image Communication}, <br>
+  volume={110}, <br>
   pages={116875}, <br>
-  year={2022}, <br>
+  year={2023}, <br>
   publisher={Elsevier} <br>
 } <br>
 
